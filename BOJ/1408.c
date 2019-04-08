@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main (){char a,b,c,d,e,f;int NowSec,StartSec,hour,min,sec;scanf("%c%c:%c%c:%c%c%*c",&a,&b,&c,&d,&e,&f);a-='0';b-='0';c-='0';d-='0';e-='0';f-='0';NowSec=a*36000+b*3600+c*600+d*60+e*10+f;scanf("%c%c:%c%c:%c%c",&a,&b,&c,&d,&e,&f);a-='0';b-='0';c-='0';d-='0';e-='0';f-='0'; StartSec=a*36000+b*3600+c*600+d*60+e*10+f;StartSec-=NowSec; hour=StartSec/3600;min=(StartSec%3600)/60;sec=StartSec%60; printf("%02d:%02d:%02d\n",hour,min,sec);return 0;}
